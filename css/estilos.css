@@ -1,112 +1,135 @@
 @charset "UTF-8";
 @font-face {
   font-family: Karla-Regular;
-  src: url(../fonts/Karla-Regular.ttf); }
-
+  src: url(../fonts/Karla-Regular.ttf);
+}
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 /* Declaracion de variables */
 @keyframes efecto_mensaje_bienvenida {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   50% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
-
+    opacity: 0;
+  }
+}
 @keyframes efecto_cursos_sobre_producto {
   0% {
-    opacity: 0; }
+    opacity: 0;
+  }
   50% {
-    opacity: 1; }
+    opacity: 1;
+  }
   100% {
-    opacity: 0; } }
-
+    opacity: 0;
+  }
+}
 .button, #formContacto .form-button {
   padding: 10px;
   background-color: #3a3a3a;
   color: #fff;
-  border: 1px solid #3a3a3a; }
+  border: 1px solid #3a3a3a;
+}
 
 .button:hover, #formContacto .form-button:hover {
   background-color: #3a3a3a;
-  border-color: #3a3a3a; }
+  border-color: #3a3a3a;
+}
 
 /* Estilos para las secciones que tiene clase textMisionVision */
 .textMisionVision {
-  font-style: italic; }
+  font-style: italic;
+}
 
 #areaElectricaySoftware {
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 #areaElectricaySoftware h2 {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 #areaTratamientoDeAgua {
-  margin-top: 30px; }
+  margin-top: 30px;
+}
 
 #areaTratamientoDeAgua h2 {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .productos-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* Dos columnas del mismo ancho */
-  gap: 20px;
-  /* Espaciado entre las cajas de productos */
-  /* media query para pantalla pequeñas */ }
-  @media (max-width: 768px) {
-    .productos-container {
-      grid-template-columns: 1fr;
-      /* Una sola columna en dispositivos mss pequeños */ } }
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
+  gap: 20px; /* Espaciado entre las cajas de productos */
+  /* media query para pantalla pequeñas */
+}
+@media (max-width: 768px) {
+  .productos-container {
+    grid-template-columns: 1fr; /* Una sola columna en dispositivos mss pequeños */
+  }
+}
 
 #sectionProductos {
-  /* Cambia el tamaño al pasar el mouse por encima */ }
-  #sectionProductos .col-producto {
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    /* Agrega transición para suavizar el efecto */ }
-    #sectionProductos .col-producto h2 a {
-      text-decoration: none;
-      color: black; }
-    #sectionProductos .col-producto p {
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px; }
-  #sectionProductos .col-producto:hover {
-    transform: scale(1.1);
-    /* Puedes ajustar el valor según tus preferencias */ }
+  /* Cambia el tamaño al pasar el mouse por encima */
+}
+#sectionProductos .col-producto {
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out; /* Agrega transición para suavizar el efecto */
+}
+#sectionProductos .col-producto h2 a {
+  text-decoration: none;
+  color: black;
+}
+#sectionProductos .col-producto p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+#sectionProductos .col-producto:hover {
+  transform: scale(1.1); /* Puedes ajustar el valor según tus preferencias */
+}
 
 /* Estilos para el header*/
 header {
   text-align: center;
-  /* Estilos para el nav*/ }
-  header nav {
-    background-color: #ececec; }
-    header nav .nav-item a {
-      /* param: fuente, tamañp, color, aliniacion */
-      font-family: Karla-Regular;
-      font-size: 18px;
-      color: black;
-      /* 
-        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
-        si bien no es necesario lo hago para usar una condicional 
-    */
-      margin: 5px 40px 5px 40px; }
-    header nav .nav-item a:hover {
-      font-weight: bold;
-      transform: scale(1.1); }
+  /* Estilos para el nav*/
+}
+header nav {
+  background-color: #a58d8d;
+}
+header nav .nav-item a {
+  /* param: fuente, tamañp, color, aliniacion */
+  font-family: Karla-Regular;
+  font-size: 18px;
+  color: rgb(65, 62, 62);
+  /* 
+      Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
+      si bien no es necesario lo hago para usar una condicional 
+  */
+  margin: 5px 40px 5px 40px;
+}
+header nav .nav-item a:hover {
+  font-weight: bold;
+  transform: scale(1.1);
+}
 
 main .container {
-  padding-top: 20px; }
+  padding-top: 20px;
+}
 
 #slider {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+}
 
 h1 {
   /* param: fuente, tamaño, color, aliniacion */
@@ -114,10 +137,11 @@ h1 {
   font-size: 28px;
   color: black;
   /* 
-        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
-        si bien no es necesario lo hago para usar una condicional 
-    */
-  text-align: center; }
+      Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
+      si bien no es necesario lo hago para usar una condicional 
+  */
+  text-align: center;
+}
 
 h2 {
   /* param: fuente, tamaño, color, aliniacion */
@@ -125,75 +149,72 @@ h2 {
   font-size: 16px;
   color: black;
   /* 
-        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
-        si bien no es necesario lo hago para usar una condicional 
-    */
-  text-align: center; }
+      Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
+      si bien no es necesario lo hago para usar una condicional 
+  */
+  text-align: center;
+}
 
 .textMisionVision {
-  padding-bottom: 80px; }
+  padding-bottom: 80px;
+}
 
 #sectionHome h1 {
   /* param: nombre, cantidadDeCiclos, velocidad, duracion */
   animation-name: efecto_mensaje_bienvenida;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
-  animation-duration: 4s; }
+  animation-duration: 4s;
+}
 
 .container-contacto {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  /* Dos columnas del mismo ancho */
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
   gap: 20px;
-  /* media query para pantalla pequeñas */ }
-  @media (max-width: 768px) {
-    .container-contacto {
-      grid-template-columns: 1fr;
-      /* Una sola columna en dispositivos mss pequeños */
-      text-align: center; } }
+  /* media query para pantalla pequeñas */
+}
+@media (max-width: 768px) {
+  .container-contacto {
+    grid-template-columns: 1fr; /* Una sola columna en dispositivos mss pequeños */
+    text-align: center;
+  }
+}
+.container-contacto #item-mapa iframe {
+  width: 600px;
+  height: 450px;
+  /* anchico el tamaño del mapa en pantallas mas pequeñas*/
+}
+@media (max-width: 768px) {
   .container-contacto #item-mapa iframe {
-    width: 600px;
-    height: 450px;
-    /* anchico el tamaño del mapa en pantallas mas pequeñas*/ }
-    @media (max-width: 768px) {
-      .container-contacto #item-mapa iframe {
-        width: 300px;
-        height: 250px; } }
+    width: 300px;
+    height: 250px;
+  }
+}
+.container-contacto #item-text {
+  grid-column: span 2;
+}
+@media (max-width: 768px) {
   .container-contacto #item-text {
-    grid-column: span 2; }
-    @media (max-width: 768px) {
-      .container-contacto #item-text {
-        grid-column: span 1; } }
+    grid-column: span 1;
+  }
+}
 
 form {
   font-family: Karla-Regular;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 #formContacto label {
-  font-weight: bold; }
-
+  font-weight: bold;
+}
 #formContacto .commponente-form-contacto {
   width: 300px;
-  margin-bottom: 10px; }
-
+  margin-bottom: 10px;
+}
 #formContacto .form-button {
   font-size: 16px;
   padding: 8px;
-  border-radius: 5px; }
+  border-radius: 5px;
+}
 
-/* Estilos para el pie de pagina */
-footer {
-  background-color: #333;
-  /* param: fuente, tamaño, color, aliniacion */
-  font-family: sans-serif;
-  font-size: 16px;
-  color: #fff;
-  /* 
-        Si pasan null en el argumento de alineacion ignora la asignacion del atributo, 
-        si bien no es necesario lo hago para usar una condicional 
-    */
-  text-align: center;
-  padding: 10px;
-  position: relative;
-  bottom: 0;
-  width: 100%; }
+/*# sourceMappingURL=estilos.css.map */

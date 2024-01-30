@@ -17,11 +17,15 @@
 
 // Importo los estilos para la pagina nosotros
 @import "layout/nosotros";
+
+
 // Importo los estilos para la pagina productos
 @import "layout/productos";
 
 
 /* Estilos para el header*/
+
+
 header {
     text-align: center;
     /* Estilos para el nav*/
@@ -79,8 +83,10 @@ h2 {
 
 
 .container-contacto {
+
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas del mismo ancho */
+
     gap: 20px;
 
     /* media query para pantalla pequeñas */
@@ -135,15 +141,5 @@ form {
     } 
 }
 
-/* Estilos para el pie de pagina */
-footer{
-    background-color: $bg-color-footer;
-    /* param: fuente, tamaño, color, aliniacion */
-    @include fuente (sans-serif, 16px, $font-color-footer, center);
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
 
 
