@@ -10,7 +10,11 @@
 }
 
 // Importaciones
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
 @import "utilities/variables";
+@import "utilities/global.scss";
 @import "utilities/animaciones";
 @import "utilities/mixin";
 @import "utilities/extend";
@@ -30,7 +34,7 @@ header {
     text-align: center;
     /* Estilos para el nav*/
     nav {
-        background-color: $bg-color-nav;
+        background-color: map-get($colores, color-fondo);
         .nav-item {
             a {
                 /* param: fuente, tamañp, color, aliniacion */

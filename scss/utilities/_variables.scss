@@ -1,9 +1,43 @@
 /* Declaracion de variables */
 
-
-// Variables para nav
 $bg-color-nav: #a58d8d;
 $font-color-nav: rgb(65, 62, 62);
 $font-size-nav: 18px;
+$font-family-base: "Roboto Slab",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
 
+$headings-font-family: "Montserrat",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
 
+$subheadings-font-family: $font-family-base;
+
+$headings-font-weight: 700;
+$headings-letter-spacing: 0.0625em;
+
+$line-height-lg: 1.75;
+
+$colores: (
+    color-fondo: rgb(139, 143, 142),
+    color-texto: rgb(0, 0, 0),
+    sombreado:rgb(143, 142, 142),
+    )
