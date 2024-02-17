@@ -13,3 +13,7 @@ Herramientas utilizadas:
 [Deploy](https://maxirod30.github.io/empresa/index.html)
 
 ***
+
+## Link en Vercel
+
+[Deploy](https://empresa-two-blush.vercel.app/pages/mision.html)
